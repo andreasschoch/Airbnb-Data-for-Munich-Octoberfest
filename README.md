@@ -1,7 +1,7 @@
-# Airbnb Analysis Munich, Germany
+# Analysis of Airbnb Data for Munich Octoberfest, Germany
 
-This Repo includes an analysis of Airbnb data from Munich, Germany.
-See my Kernel on Kaggle with the complete description of this analysis [here](https://www.kaggle.com/chriskue/airbnb-analysis-munich). 
+This Repo includes an analysis of Airbnb data, especially for the octoberfest in Munich, Germany.
+See my Kernel on Kaggle with the complete description of this analysis [here](https://www.kaggle.com/chocoschoch/analysis-of-airbnb-data-for-munich-octoberfest). 
 
 ### Table of Contents
 
@@ -24,13 +24,12 @@ After installing the following libraries, you can simply run the notebook in Jup
 
 ## Motivation for the project<a name="motivation"></a>
 
-This analysis and the additional blog post was done as a project within the Udacity Data Science Nanodegree. 
-I am a resident in Munich, Germany so I find that data particularly interesting.
-In order to get a better insight into Airbnb, especially in Munich, I am particularly interested in the answers to the following three questions:
+I am still trying to understand a bit more about the current real estate market in munich, especially the area around the octoberfest (theresienwiese). Therefore I think the Airbnb dataset for munich could be one possible source of information to gain usefull insights in the current situation.
 
-- When is the most expensive time of the year to visit Munich and how much does the price spike?
-- What are the most expensive neighbourhoods in Munich? 
-- What factors influence the price most?
+**Specific questions to answer:**
+1. What are the TOP 3 most expensive city districts for a stay in Munich in general?
+2. What are the TOP 5 city districts in munich with the best distance-price-ratio for a stay near the are of the octoberfest?
+3. What are the TOP 3 factors influence the price for a stay near the area of the octoberfest?
 
 
 ## File Descriptions<a name="description"></a>
@@ -51,27 +50,39 @@ contains reviews.csv - unique id for each reviewer and detailed comments
 
 ## Results <a name="results"></a>
 
-The derivation of the results can be found in the blog post [here](https://www.kaggle.com/chriskue/airbnb-analysis-munich).
+The derivation of the results can be found in the blog post [here](https://www.kaggle.com/chocoschoch/analysis-of-airbnb-data-for-munich-octoberfest).
 
 In a nutshell:  
-**When is the most expensive time of the year to visit Munich and how much does the price spike?**  
-The most expensive time of the year 2020 is between the end of September and the beginning of October during the Oktoberfest. The average price spikes around +15 USD.
 
-**What are the most expensive neighbourhoods in Munich?**  
-The TOP 3 expensive neighbourhoods in Munich (in average) are:
-*Altstadt-Lehel
-*Trudering-Riem
-*Allach-Untermenzing
+### Question 1: "What are the TOP 3 most expensive city districts for a stay in Munich in general?"  
+**Answer:**  
+The TOP 3 expensive districts in Munich (on average price) are   
+- Altstadt-Lehel 
+- Trudering-Riem
+- Allach-Untermenzing
 
-**What factors influence the price most?**  
-The TOP 5 factors of an apartment that have the greatest influence on the price are:
+### Question 2: "What are the TOP 5 city districts in munich with the best distance-price-ratio for a stay near the area of the octoberfest?" 
+**Answer:**   
+The TOP 5 locations (district) with the best price-distance-ration are:  
+- Sendling
+- Sendling-Westpark
+- Untergießing-Harlaching
+- Laim
+- Neuhausen-Nymphenburg
+
+### Question 3: "What are the TOP 3 factors influence the price for a stay near the area of the octoberfest?"
+**Answer:**
+The TOP 3 factors of an apartment that have the greatest influence on the price are:
 - Accommodates
-- Entire home/ Apartment
+- Bedrooms
 - Extra people
-- Number of reviews
-- Guest included
+
+This analysis was done as a project within the Udacity Data Science Nanodegree.   
+Any kind of optimization is very welcome. I really appreciate any feedback to improvement.  
+
+The underlying Jupyter Notebook to this evaluation can be found on GitHub (https://github.com/andreasschoch/airbnb-munich-octoberfest-analysis)
 
 
 ## Thanks, Authors, Acknowledgements <a name="thanks"></a>
 
-The source for the data is Inside Airbnb which was imported to Kaggle [here](https://www.kaggle.com/chriskue/munich-airbnb-data) and is available under Creative Commons CC0 1.0 Universal (CC0 1.0) "Public Domain Dedication" license. 
+The source for the data is Inside Airbnb which was imported to Kaggle [here](https://www.kaggle.com/chocoschoch/analysis-of-airbnb-data-for-munich-octoberfest) and is available under Creative Commons CC0 1.0 Universal (CC0 1.0) "Public Domain Dedication" license. 
